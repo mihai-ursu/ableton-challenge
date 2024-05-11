@@ -11,9 +11,24 @@ import "../styles/global.css";
   </head>
   <body>
     <Header />
-    <main>
+    <main class="container">
       <slot />
     </main>
     <Footer />
   </body>
 </html>
+
+<style>
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    background-color: #f3f3f3;
+  }
+
+  main {
+    background-color: white;
+  }
+</style>

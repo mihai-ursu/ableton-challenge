@@ -3,15 +3,28 @@ import Logo from "../../assets/logo.svg?raw";
 ---
 
 <header class="container">
-  <a href="/" class="header__logo-link">
-    <Fragment set:html={Logo} />
-  </a>
+  <div class="header__top">
+    <div class="header__top-left">
+      <a href="/" class="header__logo-link">
+        <Fragment set:html={Logo} />
+      </a>
+      <nav class="header__nav-left"></nav>
+    </div>
+    <div class="header__top-right"></div>
+  </div>
 </header>
 
 <style>
   header {
+    background-color: white;
+
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .header__top {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 </style>
 
