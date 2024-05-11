@@ -2,9 +2,22 @@
 import Logo from "../../assets/logo.svg?raw";
 ---
 
-<header>
-  <a href="/">
+<header class="container">
+  <a href="/" class="header__logo-link">
     <Fragment set:html={Logo} />
   </a>
 </header>
-<style></style>
+
+<style>
+  header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+</style>
+
+<style is:global>
+  .header__logo {
+    width: 3.75rem;
+    height: auto;
+  }
+</style>
